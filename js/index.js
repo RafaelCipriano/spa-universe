@@ -1,5 +1,9 @@
 import { Router } from "./router.js";
 
+if (window.location.pathname !== "/") {
+    window.location.pathname = "/"
+}
+
 const router = new Router()
 router.add('/', '/pages/home.html')
 router.add('/universo', '/pages/universo.html')
